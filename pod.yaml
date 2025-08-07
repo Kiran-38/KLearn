@@ -2,12 +2,9 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: my-pod
-  namespace: klearn
-  labels:
-    name: my-pod
 spec:
   containers:
-    - name: nginx
+    - name: my-container
       image: nginx:latest
       ports:
-        - containerPort: 5000
+        - containerPort: 8080
